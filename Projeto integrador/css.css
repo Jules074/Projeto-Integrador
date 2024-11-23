@@ -1,0 +1,110 @@
+.header {
+    overflow: hidden;
+    background-color: #fa3426;
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: #d60c0c;
+    color: black;
+  }
+  
+  .header a.active {
+    background-color: rgb(255, 251, 30);
+    color: rgb(0, 0, 0);
+  }
+
+  .header a.hover{
+    background-color: rgb(30, 255, 98);
+    color: rgb(0, 0, 0);
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+  }
+/*------------------------------------------------------------------------------------------*/
+.container {
+    position: static;
+    width: 100px;
+    height: auto;
+  }
+  
+  .image {
+    opacity: 1;
+    display: inline;
+    width: 100px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    /*top: 50px;
+    left: 50px;*/
+    transform: translate(-10%, -10%);
+    
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
