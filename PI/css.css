@@ -1,0 +1,135 @@
+/* navigation */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navegation {
+  overflow: hidden;
+  background-color: #ffb92e;
+}
+
+.navegation a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navegation a:hover {
+  background-color: #fc8218;
+  color: black;
+}
+
+.navegation a.active {
+  background-color: #ff1515;
+  color: white;
+}
+
+/* Style the text */
+.text_principal {
+    font-family: Arial;
+    text-align: justify;
+    margin: 80px ;
+  }
+
+/*centralizar img*/  
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+  /* Header/Logo Title */
+  .header {
+    padding: 60px;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+    background-image: url('snoopie1.jpg');
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
+
+  /* footer */
+  .footer {
+    background-image: url('rodapé.png');
+    background-size:cover;
+  }
+  
+/* personagens dropdown*/
+.espaco {
+  border: 3px solid black;
+  padding: 20px;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  float: left;
+  background-color: white;
+  border: 3px solid black;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
+
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    max-width: 300px;
+    min-width: 300px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    border: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    max-width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+}
+
+/*social media links*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #f71862;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-google {
+  background: #ffeb0a;
+  color: white;
+}
